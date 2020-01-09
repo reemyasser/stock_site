@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+<h1>  please complete  your data </h1>
+<form method="post" action="{% url 'insert1' %}">
+{% csrf_token %}
+    full name<input  type="text" name="name" > <br>
+     your email<input  type="email" name="email" ><br>
+
+     your age<input  type="number" name="age" ><br>
+ birthday<input  type="date" name="date" ><br>
+    <input type="submit" value="send data"><br>
+
+
+</form>
+
+</body>
+</html>

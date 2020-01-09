@@ -1,0 +1,195 @@
+*{margin:0; padding:0}
+
+body
+{
+   background-color: #E9E9E9;
+   margin:0; padding:0
+}
+
+body#Login_body
+{
+    background-image: url(photoes/BG.jpg);
+    background-size: cover;
+    background-color: #E9E9E9;
+    margin:0; padding:0;
+}
+
+
+
+/* ----------------------------------------- Log in ------------------------------------------------------------ */
+
+fieldset
+{
+    width: 250px;
+    height: auto;
+    padding: 20px 30px;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #000;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+input
+{
+    display: block;
+    width: 250px;
+    text-align: center;
+    padding: 8px 0px;
+    border: none;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+input[type="button"]
+{
+    background-color: #EF7336;
+    color: #fff;
+    width: 150px;
+    margin-left:  50px;
+}
+
+#login_h1
+{
+    color: white;
+    margin-bottom: 20px;
+}
+
+input[type="button"]:hover
+{
+    background-color:  #d45211;
+
+}
+
+
+
+/* ------------------------------------------- Company ------------------------------------------------------------- */
+
+
+.results
+{
+   width: 70vw;
+   height: 100%;
+   background-color:#4DC85A22;
+
+   top: 85vh;
+   left: 26vw;
+   border: solid 1px #c2d6d6;
+   box-shadow: 0px 0px 5px 2px #ccc;
+   max-height: 100vh;
+
+
+}
+
+.Chart
+{
+   width: 70vw;
+   height: 70vh;
+   background-color:#4DC85A22;
+
+
+
+   top: 10vh;
+   left: 26vw;
+   border: solid 1px #c2d6d6;
+   box-shadow: 0px 0px 5px 2px #ccc;
+
+
+}
+
+.up
+{
+
+    color: white;
+    display: block;
+    width: 10vh;
+    height: 10vh;
+   padding: 14px 14px;
+
+   text-align: center;
+   background-color: green;
+   position: fixed;
+   top: 30vh;
+   left: 80vw;
+
+   border: solid 1px #c2d6d6;
+   box-shadow: 0px 0px 5px 2px #ccc;
+
+
+}
+.down
+{
+
+    color: white;
+    display: block;
+    width: 10vh;
+    height: 10vh;
+   padding: 14px 14px;
+
+    text-align: center;
+   background-color: red;
+   position: fixed;
+   top: 30vh;
+   left: 85vw;
+   border: solid 1px #c2d6d6;
+   box-shadow: 0px 0px 5px 2px #ccc;
+
+
+}
+
+.left-bar
+{
+    width: 20vw;
+    height: 85vh;
+   background-color:#4DC85A22;
+    border: solid 1px #c2d6d6;
+    box-shadow: 0px 0px 5px 2px #ccc;
+    position: fixed;
+    top: 10vh;
+    left: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+span
+{
+    background-color: black;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 10vh;
+    padding-top: 4vh;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+}
+
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 10px olivedrab;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background: yellowgreen;
+box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #7bac10;
+}
+
+
+
+body{
+width:100%;
+  overflow-y: scroll;
+
+}

@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+{%extends 'home.html'%}
+{%load static%}
+
+{%block base%}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>profile</title>
+     <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<style>
+
+*{margin:0; padding:0}
+
+body
+{
+   background-color: #E9E9E9;
+   margin:0; padding:0
+}
+
+body#Login_body
+{
+    background-image: url(photoes/BG.jpg);
+    background-size: cover;
+    background-color: #E9E9E9;
+    margin:0; padding:0;
+}
+
+
+
+/* ----------------------------------------- Log in ------------------------------------------------------------ */
+
+fieldset
+{
+    width: 250px;
+    height: auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #000;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+input
+{
+    display: block;
+    width: 250px;
+    text-align: center;
+    padding: 8px 0px;
+    border: none;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+input[type="button"]
+{
+    background-color: #EF7336;
+    color: #fff;
+    width: 150px;
+    margin-left:  50px;
+}
+
+#login_h1
+{
+    color: black;
+    margin-bottom: 20px;
+}
+
+input[type="button"]:hover
+{
+    background-color:  #d45211;
+
+}
+
+
+
+/* ------------------------------------------- Company ------------------------------------------------------------- */
+
+
+
+
+.results
+{
+   width: 70vw;
+   height: 70vh;
+   background-color:#4DC85A22;
+  margin-top: 10vh;
+
+  margin-left: 26vw;
+   top: 850vh;
+   left: 26vw;
+   border: solid 1px #c2d6d6;
+   box-shadow: 0px 0px 5px 2px #ccc;
+    overflow-y:scroll;
+
+
+
+}
+
+.chartall
+{
+
+ width: 70vw;
+   height: 70vh;
+   background-color:#4DC85A22;
+ margin-top: 3vh;
+
+  margin-left: 26vw;
+
+
+   border: solid 1px #c2d6d6;
+   box-shadow: 0px 0px 5px 2px #ccc;
+   display: flex;
+   flex-direction: column;
+
+
+}
+.Chart
+{
+
+
+}
+
+.up
+{
+
+    color: white;
+    display: block;
+    width: 12vh;
+    height: 12vh;
+   padding: 7px 7px;
+
+   text-align: center;
+   background-color: green;
+
+    position:absolute; TOP:250px; LEFT:1210px;
+
+   border: solid 1px #c2d6d6;
+   box-shadow: 0px 0px 5px 2px #ccc;
+
+
+}
+.down
+{
+
+    color: white;
+    display: block;
+    width: 12vh;
+    height: 12vh;
+   padding: 7px 7px;
+order: 2;
+    text-align: center;
+   background-color: red;
+
+position:absolute; TOP:250px; LEFT:1300px;
+
+   border: solid 1px #c2d6d6;
+   box-shadow: 0px 0px 5px 2px #ccc;
+
+
+}
+
+.left-bar
+{
+    width: 20vw;
+    height: 85vh;
+   background-color:#4DC85A22;
+    border: solid 1px #c2d6d6;
+    box-shadow: 0px 0px 5px 2px #ccc;
+    position: fixed;
+    top: 10vh;
+    left: 15px;
+    text-align: center;
+
+    font-size: 30px;
+}
+
+span
+{
+    background-color: black;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 10vh;
+    padding-top: 4vh;
+}
+
+
+p{
+
+ font-size: 16px;
+ color: white;
+
+}
+
+
+
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+}
+
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 10px olivedrab;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background: yellowgreen;
+box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #7bac10;
+}
+
+
+
+table, th, td {
+            border: 2px solid black;
+            margin: 0 auto;
+        }
+th, td {
+            padding: 10px;
+            text-align: left;
+            color:white;
+            font-size: 20px;
+
+        }
+
+
+
+</style>
+</head>
+<body  style="
+
+		overflow:scroll;
+
+		"  >
+
+
+
+<div   >
+
+
+
+{% if request.user.is_authenticated %}
+
+
+        <div class="left-bar"><span>About company</span>
+
+
+{%if stockdata == 'Medinet-Nasr-Housing.csv'%}
+
+            <p>Medinet Nasr for Housing and Development SAE is an Egypt-based real estate development company. The Company is engaged in activities related to development of land, buildings and facilities, including acquisition of land, real estate sale and rental, dividing it and providing all types of facilities for reconstruction and connected to it in Nasr City and other areas nationwide. It also establishes, manages and invests in all residential, administrative, touristic, recreational and all projects, and real estate operations, financial, commercial and entertainment, as well as carrying out design, engineering and consultancy. The Company projects portfolio includes Tag Sultan, Taj City and Sarai, which are residential apartment buildings with commercial areas, medical facilities and schools.
+
+            </p>
+
+
+{%elif stockdata == 'T-M-G-Holding.csv'%}
+            <p> Talaat Mostafa Group Holding Co SAE (TMG Holding) is an Egypt-based company engaged in real estate investment activities. The Company establishes and develops hotels, touristic and residential projects in Egypt. The Company focuses on community development, through establishing self-sustained residential city and community complexes for the upper and middle classes. As of March 19, 2013, the Company developed three luxury hotels, Nile Plaza in Cairo, San Stefano in Alexandria, and Flour Seasons in Sharm El Sheikh. The Company is active through its subsidiaries include Arab Company for Projects and Urban Development, Alexandria Real Estate Investment Company, San Stefano Real Estate Investment Company and Alexandria Company for Urban Projects.</p>
+            {%elif stockdata == 'Oriental-Weavers.csv'%}
+            <p>CAIRO, March 17 (Reuters) - Shares in Egypt’s Oriental Weavers, the world’s biggest machine-woven carpet maker, hit their highest level since 2007 after the company said it was considering splitting its shares in a bid to boost their liquidity and trading volume.
+
+Oriental Weavers, whose fourth-quarter results are due on Tuesday, said in a statement published by Egypt’s bourse that it would ask its board to discuss splitting each share into five later on Monday.
+
+Shares in the company, which has a market cap of 3.79 billion Egyptian pounds ($544.5 million) jumped almost 7 percent to 45.00 pounds.
+
+Egypt revised regulation earlier this year to boost trading and attract more investment. A listed company no longer needs permission from the Egyptian Financial Supervisory Authority to split shares if it complies with pre-set rules. ($1 = 6.9602 Egyptian Pounds)</p>
+{%elif stockdata == 'Suez-Cement.csv'%}
+            <p>Ezz Steel Co SAE is an Egypt-based company that, together with its subsidiaries, is engaged in the manufacture, trading and distribution of a range of iron and steel products, as well as associated products and services. The Company’s products include steel rebar, wire rod and flat steel. Ezz Steel Co SAE plants are located in Alexandria, Suez, Sadat City and Tenth Ramadan City. The Company’s subsidiaries are: Al Ezz Rolling Mills Company (ERM), Al Ezz El Dekheila for Steel-Alexandria (EZDK), Al Ezz Flat Steel Company (EFS), Iron for Industrial, Trading and Constructing Steel Company (Contra Steel), as well as Misr for Pipes and Casting Industry Company. Ezz Steel Co SAE is a Subsidiary of Al Ezz Group Holding Company for Industry and Investment.</p>
+{%elif stockdata == 'Telecom-Egypt.csv'%}
+            <p> Telecom Egypt Co SAE is an Egypt-based joint stock company, which is engaged in the provision of public communications and associated products and services. The Company operates under the following segments: Communications, Marine Cables and Infrastructure; Internet Services, as well as Outsourcing Services. It offers a range of fixed line and retail telecommunications services, as well as wholesale telecommunications services. Its retail telecommunication services include access, local, long distance and international voice, Internet and data, as well as other services. Its wholesale services include broadband capacity leasing to Internet Service Providers (ISPs), as well as national and international interconnection services.</p>
+
+
+{%endif%}
+
+        </div>
+    <div class="chartall">
+        <div class="Chart">
+
+              <div class="up">
+    <h2>up</h2>
+    {{acc_up}}%
+
+
+
+
+
+</div>
+
+  <div class="down">
+                 <h2>down</h2>
+    {{acc_down}}%
+</div>
+
+            {% autoescape off %}
+            {{ g }}
+            {% endautoescape %}
+
+</div>
+
+
+        </div>
+
+
+
+        <div class="results" text-align="center" >
+
+            <table width="400"    >
+
+                <tr >
+
+                    <th >dates</th>
+                    <th>real price</th>
+                    <th> predicted price</th>
+
+      </tr>
+                 {%for i in list1 %}
+<tr >
+
+
+    <td>
+    {{i.tomorowday}}
+
+
+    </td>
+
+        <td>
+
+        </td>
+    <td>
+    {{i.list_three}}
+    </td>
+</tr>
+
+{% endfor %}
+                 {%for i in list %}
+                    <tr >
+
+
+    <td>
+    {{i.dates}}
+
+
+    </td>
+
+        <td>
+{{i.testingy}}
+        </td>
+    <td>
+    {{i.pred}}
+    </td>
+</tr>
+
+                 {% endfor %}
+            </table>
+
+
+            {{list_three}}  {{data |safe}}
+</div>
+
+
+
+
+{% endif %}
+</div>
+</body>
+</html>
+{%endblock%}
