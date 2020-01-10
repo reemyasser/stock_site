@@ -50,4 +50,4 @@ tflearn==0.3.2
 Theano==1.0.3+2.g3e47d39ac.dirty
 tornado==5.1.1
 tqdm==4.31.1
-Werkzeug==0.14.1
+Werkzeug==0.15.3
