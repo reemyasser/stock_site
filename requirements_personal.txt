@@ -3,7 +3,7 @@ astor==0.7.1
 bleach==1.5.0
 certifi==2019.3.9
 cycler==0.10.0
-Django==2.2.5
+Django==2.2.8
 django-mysql==3.2.0
 gast==0.2.1.post0
 grpcio==1.16.1
