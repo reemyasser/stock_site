@@ -51,5 +51,5 @@ tflearn==0.3.2
 Theano==1.0.1
 tornado==5.1.1
 tqdm==4.31.1
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 WhiteNoise==2.0.6
